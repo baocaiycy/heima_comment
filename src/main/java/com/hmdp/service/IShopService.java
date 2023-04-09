@@ -15,4 +15,9 @@ import com.hmdp.entity.Shop;
 public interface IShopService extends IService<Shop> {
 
 
+    //通过id查询商户
+    Result queryShopById(Long id);
+
+    //通过id修改商户
+    Result updateShopById(Shop shop);
 }
